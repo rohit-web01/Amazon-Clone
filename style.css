@@ -1,5 +1,5 @@
 /* CSS Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 /* NavBar CSS */
 
-.navbar{
+.navbar {
     height: 3.8rem;
     background-color: #0f1111;
     color: white;
@@ -17,16 +17,16 @@
     justify-content: space-between;
 }
 
-.border{
+.border {
     border: 1.5px solid transparent;
 }
 
-.border:hover{
+.border:hover {
     border: 1.5px solid white;
     border-radius: .1rem;
 }
 
-.nav-box{
+.nav-box {
     height: 90%;
     display: flex;
     justify-content: center;
@@ -34,18 +34,18 @@
     cursor: pointer;
 }
 
-.box-center{
+.box-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav-first{
+.nav-first {
     font-size: .8rem;
     color: #cccccc;
 }
 
-.nav-second{
+.nav-second {
     font-family: ubuntu;
     font-size: 1rem;
     font-style: 900;
@@ -53,7 +53,7 @@
 
 
 /* Box1 */
-.nav-logo{
+.nav-logo {
     display: flex;
     justify-content: center;
     height: 90%;
@@ -61,36 +61,36 @@
     align-items: center;
 }
 
-.logo{
+.logo {
     width: 8rem;
     height: 90%;
     background-image: url("Assets/amazon_logo.png");
-    background-size:cover;
+    background-size: cover;
 
 }
 
 /* Box2 */
-.nav-address{
+.nav-address {
     flex-direction: column;
 }
 
-.add-first{
+.add-first {
     margin-left: .7rem;
     font-size: .8rem;
     color: #cccccc;
 }
 
-.add-icon{
+.add-icon {
     display: flex;
     gap: 3px;
 }
 
-.add-second{
+.add-second {
     font-size: 1rem;
 }
 
 /* Box3 */
-.nav-search{
+.nav-search {
     width: 70%;
     height: 80%;
     /* background-color: blue; */
@@ -99,12 +99,12 @@
     padding: 0;
 }
 
-.nav-search:hover{
+.nav-search:hover {
     border: 2px solid orangered;
     border-radius: 4px;
 }
 
-.search-select{
+.search-select {
     background-color: #f3f3f3;
     width: 3rem;
     text-align: center;
@@ -113,14 +113,14 @@
     border: none;
 }
 
-.search-input{
+.search-input {
     width: 100%;
     font-size: 1rem;
     border: none;
     padding-left: .5rem;
 }
 
-.search-icon{
+.search-icon {
     width: 3rem;
     font-size: 1.5rem;
     background-color: #febd6a;
@@ -130,29 +130,29 @@
 }
 
 /* Box4 */
-.nav-signin{
+.nav-signin {
     flex-direction: column;
     align-items: flex-start;
 }
 
 /* Box5 */
-.nav-rno{
+.nav-rno {
     flex-direction: column;
     align-items: flex-start;
 }
 
 /* Box6 */
-.nav-cart{
+.nav-cart {
     flex-direction: row;
 }
 
-.nav-cart i{
+.nav-cart i {
     font-size: 2rem;
 }
 
 
 /* Panel CSS */
-.panel{
+.panel {
     height: 2.5rem;
     background-color: #222f3d;
     color: white;
@@ -161,11 +161,11 @@
     align-items: center;
 }
 
-.panel-all a{
+.panel-all a {
     margin-left: .3rem;
 }
 
-.panel-options{
+.panel-options {
     width: 75%;
     display: flex;
     justify-content: flex-start;
@@ -174,21 +174,84 @@
     gap: 1rem;
 }
 
-.panel-deal{
+.panel-deal {
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.panel-all a, .panel-options a, .panel-deal a{
+.panel-all a,
+.panel-options a,
+.panel-deal a {
     color: white;
 
 }
 
 
 /* Hero Section CSS */
-.hero-section{
+.hero-section {
     background-image: url("Assets/hero_image.jpg");
-    height: 600px;
+    height: 380px;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-msg {
+    width: 80%;
+    height: 3rem;
+    background-color: white;
+    color: black;
+    font-size: 0.85;
+    align-self: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.hero-msg a {
+    color: #007185;
+    margin-left: .5rem;
+}
+
+
+/* Shop Section CSS */
+.shop-section {
+    /* margin: 1rem auto; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e2e7e6;
+    gap: 2rem;
+    padding: 2.5rem 3rem;
+}
+
+.card {
+    height: 480px;
+    width: 23%;
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1.5rem;
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+
+}
+
+.card-img {
+    width: 93%;
+    height: 70%;
+    filter: drop-shadow(0px 0px 1.5px);
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.8rem;
+}
+
+.card-link {
+    color: #007185;
 }
 
